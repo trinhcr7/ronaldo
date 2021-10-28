@@ -1,0 +1,137 @@
+#header{
+    width: 100%;
+    height: 52px;
+    background: #1D2236;
+    position: fixed;
+    z-index: 999;
+}
+#header .navbar{
+    width: 1230px;
+    height: 50px;
+    background: #1D2236;
+    margin:0px auto;
+    z-index: 999;
+}
+#header .navbar .navleft{
+    height: 30px;
+    width: 100px;
+    float: left;
+    line-height: 45px;
+
+}
+#header .navbar .navright{
+    float: right;
+}
+#header .navbar .navright .lang{
+    float: right;
+    line-height: 50px;
+}
+#header .navbar .navright .search{
+    float: right;
+    height: 28px;
+    border-radius: 50px;
+    width:150px;
+    background: white;
+    margin-right: 20px;
+    margin-top:10px;
+}
+#header .navbar .navright .search input{
+    margin-left:10px;
+    margin-top:5px;
+    background:none;
+    border:none;
+    font-weight:500;
+    color:black;
+    width:70%;
+}
+#header .navbar .navright .search input:focus{
+    outline: none;
+}
+#header .navbar .navright .search span{
+    color:black;
+    margin-left: 5px;
+    margin-top:5px;
+    margin-right: 2px;
+    font-size: 0.7rem;
+}
+#header .navbar .navright .navmenu{
+    float: right;
+    margin-right: 20px;
+    z-index: 999;
+}
+#header .navbar .navright .navmenu>ul{
+    list-style-type: none;
+    height: 100%;
+}
+#header .navbar .navright .navmenu>ul>li{
+    height: 100%;
+    float: right;
+    line-height: 50px;
+    padding: 0 20px;
+    position: relative;
+}
+#header .navbar .navright .navmenu>ul>li a{
+    color:#818181;
+    text-decoration: none;
+    font-size: 0.65rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+#header .navbar .navright .navmenu>ul>li:hover a{
+    color: white;
+}
+#header .navbar .navright .navmenu>ul>li:hover{
+    box-shadow: 0 6px 10px 0 rgba(122,125,130, 0.5), 0 6px 20px 0 rgba(122,125,130, 0.39);
+}
+#header .navbar .navright .navmenu>ul>li>ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 170px;
+    background-color: #1D2236;
+    background-image: linear-gradient(90deg,#1D2236,#6A6B6C);
+    list-style-type: none;
+}
+#header .navbar .navright .navmenu>ul>li:hover ul{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#header .navbar .navright .navmenu>ul>li>ul>li{
+    height: 40px;
+    line-height: 40px;
+    padding-left:20px;
+    padding-right:10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:white;
+    position: relative;
+}
+#header .navbar .navright .navmenu>ul>li>ul>li a{
+    text-decoration: none;
+    color: white;
+    text-transform: none;
+    width: fit-content;
+    height: fit-content;
+}
+#header .navbar .navright .navmenu>ul>li>ul>li:hover{
+    background-color: #1D2236;
+    background-image: linear-gradient(90deg,#1D2236,#4D4D4F);
+    animation: bounce 1s ease-in 0.2s infinite;
+    position: relative;
+
+}
+@keyframes bounce {
+    0%{transform: translateY(0);}
+    25%{ transform: translateY(-5px);}
+    75%{ transform: translateY(5px);}
+    100%{transform: translateY(0px);}
+
+}
+#header .navbar .navright .navmenu>ul>li>ul>li:hover a{
+    color: rgb(170, 235, 243);
+
+}

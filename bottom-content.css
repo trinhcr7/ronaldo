@@ -1,0 +1,183 @@
+#bottom-content{
+    width: 1280px;
+    height:1400px;
+    margin: 0px auto;
+    background: #11172B;
+    padding-top: 20px;
+}
+#bottom-content .bottom-container{
+    width: 1000px;
+    height: 100%;
+    margin-left: 140px;
+}
+#bottom-content .bottom-container .newsfeed{
+    width: 100%;
+    height: 50px;
+    background:rgb(170, 235, 243);
+    margin-bottom: 10px;
+}
+#bottom-content .bottom-container .newsfeed .runningtext{
+    width: 100%;
+    height: 100%;
+    float:left;
+    overflow: hidden;
+    
+}
+#bottom-content .bottom-container .newsfeed  .runningtext>ul{
+    list-style-type: none;
+    height: 100%;
+    white-space: nowrap;
+    position: relative;
+    animation: runningaction 100s infinite;
+}
+#bottom-content .bottom-container .newsfeed .runningtext >ul>li{
+    height: 100%;
+    margin-left: 400px;
+    display:inline-block;
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 50px;
+    white-space: nowrap; 
+}
+@keyframes runningaction {
+    0%{left:100%;}
+    100%{left:-600%;}
+}
+#bottom-content .bottom-container .header-video{
+    width: 100%;
+    height: 50px;
+    background:#11172B;
+}
+#bottom-content .bottom-container .header-video .left{
+    float: left;
+    color: rgb(170, 235, 243);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#bottom-content .bottom-container .header-video .go-to-store{
+    float: right;
+    padding-right: 10px;
+    line-height: 50px;
+
+}
+#bottom-content .bottom-container .go-to-store a:hover{
+    color: white;
+}
+
+#bottom-content .bottom-container .go-to-store::before{
+    content: ">>";
+    padding-right: 5px;
+    color:grey;
+    font-size: 5px;
+}
+#bottom-content .bottom-container .go-to-store a{
+    font-size: 13px;
+    color: grey ;
+
+}
+#bottom-content .bottom-container .products{
+    width: 100%;
+    height: 420px;
+    background: #11172B;
+}
+#bottom-content .bottom-container .products .product{
+    float: left;
+    width: 280px;
+    height: 400px;
+    background: white;
+    margin-right: 80px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+#bottom-content .bottom-container .products .product .describe{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#bottom-content .bottom-container .products .product button{
+    width: 90px;
+    height: 32px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background: white;
+}
+#bottom-content .bottom-container .products .product button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: grey;
+}
+#bottom-content .bottom-container .products .product:last-child{
+    margin-right: 0px;
+}
+#bottom-content .bottom-container .products .product img{
+    width: 280px ;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+#bottom-content .bottom-container .trailer{
+    color: rgb(170, 235, 243);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+#bottom-content .bottom-container .subscribe{
+    float: left;
+    width: 100%;
+    background:#11172B;
+    margin: 0 auto;
+}
+#bottom-content .bottom-container .subscribe p{
+    text-align: center;
+}
+#bottom-content .bottom-container .subscribe .header{
+    font-weight: bolder;
+    font-size: 27px;
+    color: rgb(170, 235, 243);
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.15rem;
+    padding-top: 20px;
+}
+#bottom-content .bottom-container .subscribe .detail{
+    color: white;
+}
+#bottom-content .bottom-container .subscribe .sub{
+    display: block;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+#bottom-content .bottom-container .subscribe .sub input{
+    border-radius: 55px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-color: white;
+    background: rgb(29,34,54, 0.5);
+    color: white;
+}
+#bottom-content .bottom-container .subscribe .sub input:focus{
+    outline: none;
+    color: white;
+}
+#bottom-content .bottom-container .subscribe .sub button{
+    height: 30px;
+    border-radius: 55px ;
+    width: 80px;
+    border: none;
+    background: blue;
+    color: whitesmoke;
+    font-weight: bold;
+}
